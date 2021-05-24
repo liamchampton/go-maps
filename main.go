@@ -4,11 +4,20 @@ import "fmt"
 
 func main() {
 
-	// map of keys + values of type string
-	colors := map[string]string{
-		"red":   "#ff000",
-		"green": "#00FF00",
-	}
+	// option 1: map of keys + values of type string
+	// colors := map[string]string{
+	// 	"red":   "#ff000",
+	// 	"green": "#00FF00",
+	// }
+
+	// option 2: map of keys + values of type string
+	// good if you want to figure out later on what to add to it
+	// var colors map[string]string
+
+	// option 3: map of keys + values of type string
+	colors := make(map[string]string)
+
+	colors["white"] = "#ffffff"
 
 	fmt.Println(colors)
 	fmt.Println(len(colors))
